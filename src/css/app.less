@@ -1,0 +1,113 @@
+@mainColor: #fff1e5;
+@oneMoreColor: linear-gradient( rgba(255,255,0,1) , rgba(0,255,255,1) );
+@firstShadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+@paddingTop: 10px;
+@fontSize : 18px;
+@fontFamily : Lora-Regular;
+
+@font-face {
+	font-family: 'Lora-Regular';
+	src: url(fonts/Lora-Regular.ttf);
+}
+
+html, body {
+	background-color: @mainColor;
+	font-family: @fontFamily;
+	font-size: @fontSize;
+	margin: 0;
+}
+
+nav {
+	margin-top: 15px;
+	margin-left: 10px;
+	// display: table;
+}
+.header {
+	width: 	100%;
+	position: 	relative;
+	margin-top: 15px;
+}
+
+nav a {
+	transition-property: all;
+	transition-duration: .6s;
+	transition-timing-function: ease;
+	margin-right: 10px;
+	line-height: 50px;
+	padding: .25em;
+	margin: 0 auto 2em;
+	width: 180px;
+	display: block;
+	letter-spacing: 0;
+	color: #585858;
+	position: relative;
+	vertical-align: middle;
+	text-align: center; 
+	&:hover {
+		letter-spacing: 5px;
+		color: black;
+	}
+	&:after, &:before {
+		content: " ";
+		backface-visibility: hidden;
+		border-top: 1px solid ;
+		border-bottom: 1.5px solid;
+		bottom: 0px; 
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		transition: all 280ms ease-in-out;
+		width: 0;
+	}
+	&:hover:after, &:hover:before {
+		backface-visibility: hidden;
+		transition: width 350ms ease-in-out;
+		width: 70%;
+	}
+}	
+
+.test {
+	display: table;
+}
+.test a{
+	border: 1px solid black;
+	padding: 5px;
+	display: block;
+	margin-right: 10px;
+	width: 100px;
+}
+.nav_left{
+	display: table-cell;
+	float: left;
+}
+
+.nav_right {
+	// position: absolute;
+	// right: 10px;
+	float: right;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+	}
+}
+
+li {
+	list-style-type: none;
+}
+
+.about_container {
+	width: 1000px;
+	height: 500px;
+	background: #fff;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: @firstShadow;
+	padding: @paddingTop 50px;
+	h3 {
+		text-align:center;
+	}
+}
+
+

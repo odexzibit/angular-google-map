@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<base href="/">
+</head>
+<body >
+	<div class="header">
+		<nav>
+			<div class="nav_left"><a ui-sref="main">Main page</a></div>
+			<div class="nav_left"><a ui-sref="about">About author</a></div>
+			<div class="nav_left"><a ng-if="!isAuthenticated" ui-sref='authorization'>Authorization</a></div>
+
+			<div class="nav_right"><a ng-if="!isAuthenticated" ui-sref="authenticate">Log in</a></div>
+			<div class="nav_right"><a  ng-if="isAuthenticated" ng-click="logout()" href="/#!/authenticate" >Log out</a></div>
+		</nav>
+		<div style="clear: both"></div>
+	</div>
+	<ui-view></ui-view>
+	<script src="dist/bundle.js"></script>
+</body>
+</html>

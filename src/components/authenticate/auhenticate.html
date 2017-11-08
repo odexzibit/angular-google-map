@@ -1,0 +1,10 @@
+<div id="auth_form"><h3>Login to your account</h3>
+	<form >
+		<div class="group"><input type="text" name="email"  ng-model="credentials.email"><span class="highlight"></span><label for="email" ng-show="!credentials.email.length">Email</label>
+		</div>
+		<div class="group"><input type="password" name="password" ng-model="credentials.password"><span class="highlight"></span><label for="password" ng-show="!credentials.password.length">Password</label></div>
+		<button ng-click="authenticate(credentials)">Log in</button>
+		<br>
+		<button ng-click="register()" >Register</button>
+	</form>
+</div>

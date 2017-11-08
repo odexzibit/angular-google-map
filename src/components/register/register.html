@@ -1,0 +1,9 @@
+<div id="auth_form"><h3>Register for an account</h3>
+	<form >
+		<div class="group"><input type="text" name="name"  ng-model="credentials.name" required><br><label for="name" ng-show="!credentials.name.length">Name</label></div>
+		<div class="group"><input type="text" name="email"  ng-model="credentials.email"><br><label for="email" ng-show="!credentials.email.length">Email</label></div>
+		<div class="group"><input type="text" name="username" ng-model="credentials.username"><br><label for="username" ng-show="!credentials.username.length">Username</label></div>
+		<div class="group"><input type="password" name="password" ng-model="credentials.password"><br><label for="password" ng-show="!credentials.password.length">Password</label></div>
+		<button ng-click="register(credentials)">Register</button>
+	</form>
+</div>
