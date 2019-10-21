@@ -7,6 +7,10 @@ This project uses the MEAN stack:
 * A - AngularJS - Client side application framework
 * N - Node - Package manager
 
+<img src="/testrecord5.gif" width="800px"/>
+
+<img src="/testrecord7.gif" width="800px"/>
+
 Other tools and technologies used:
 * Mongoose - schema-based solution to model application data
 * JSON Web Token - user authentication (jwt-simple)
