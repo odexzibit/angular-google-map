@@ -34,7 +34,7 @@
     "google-maps": "^3.2.1",
     "jwt-simple": "^0.5.1",
     "mongodb": "^2.2.31",
-    "mongoose": "^4.11.6",
+    "mongoose": "^5.7.6",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.1"
   }
