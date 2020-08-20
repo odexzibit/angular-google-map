@@ -28,7 +28,7 @@
     "angular": "^1.6.5",
     "angular-google-map": "0.0.2",
     "angular-ui-router": "^1.0.3",
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "express": "^4.15.4",
     "google-maps": "^3.2.1",
